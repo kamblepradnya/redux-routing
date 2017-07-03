@@ -1,3 +1,4 @@
 import config from './config';
-
-export default { config };
+import Todo from './Todo';
+import game from './game';
+export default { config,Todo,game};

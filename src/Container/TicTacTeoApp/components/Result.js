@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
-import { resetGame } from '../actions/ResetBoard';
 class Result extends Component {
   render () {
     let result = ''; 

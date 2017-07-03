@@ -30,7 +30,7 @@ class Sidebar extends React.PureComponent {
 						<Link to={'/todo'}>Todo List</Link>
 					</li>
 					<li>
-						<Link to={'/tictactei'}>Tic Tac Teo</Link>
+						<Link to={'/tictacteo'}>Tic Tac Teo</Link>
 					</li>
 				</ul>
 

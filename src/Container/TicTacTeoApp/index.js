@@ -6,18 +6,18 @@ import PropTypes from 'prop-types';
 import Board from './components/Board';
 import Result from './components/Result';
 //import { resetGame } from '../actions/ResetBoard';
-import { makeYourMove } from './actions';
+import { makeYourMove } from '../../actions';
 
 
-const TicTacTeo = props =>
+const TicTacTeoApp = props =>
   <div>
     <h1>Tic Tac Teo App</h1>
     <Result
-      turn={props.tictacteo.turn}
-      won={props.tictacteo.won}
-      draw={props.tictacteo.draw}
+      turn={props.turn}
+      won={props.won}
+      draw={props.draw}
     />
-    <Board board={props.tictacteo.board} onSquareClick={props.markSquare} />
+    <Board board={props.board} onSquareClick={props.markSquare} />
   </div>;
 
 
@@ -25,6 +25,6 @@ const TicTacTeo = props =>
 
 const selector = state => ({ tictacteo: state.tictacteo });
 
-export default connect(selector, { makeYourMove })(TicTacTeo);
+export default connect(selector, { makeYourMove })(TicTacTeoApp);
 
 

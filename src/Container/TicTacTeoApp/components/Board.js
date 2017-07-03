@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Y from './Y';
 import X from './X';
 import O from './O';
-import { makeYourMove } from '../actions';
+import { makeYourMove } from '../../../actions';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
